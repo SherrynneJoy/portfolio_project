@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +12,64 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 5.8rem;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0,0, 0.4, 0.4);
+  color: whitesmoke;
+}
+
+.App:before {
+  content: '';
+  background: url('https://wallpapers.com/images/high/dark-forest-background-bfiqqyh7og36ikso.webp') no-repeat center center/cover;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  max-width: 1000px;
+  height: 1000px;
+  margin: auto;
+  padding: 0.1rem;
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.description {
+  position: relative;
+  right: -70%;
+  transform-origin: 0, 0;
+  transform: rotate(270deg);
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(200, 200, 200, 0.5);
 }
