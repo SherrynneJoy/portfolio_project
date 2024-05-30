@@ -33,7 +33,9 @@ A simple weather application built with React, useEffect, and the OpenWeatherMap
 3. Get your API key from [OpenWeatherMap](https://home.openweathermap.org/api_keys).
 
 4.Add your API Key as a variable in your App.js file and use it alonside useEffect to get real time weather updates.
+
 5. Style the App.js file using css in the index.css file.
+
 6. Debug
     
 ## Usage
